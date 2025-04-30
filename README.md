@@ -22,7 +22,7 @@ This project uses [Turborepo](https://turbo.build/) for managing a JavaScript/Ty
 ### Frontend Setup (React)
 - Located in `packages/frontend`
 - Bootstrapped with Vite (React + TypeScript, v6+)
-- Tailwind CSS v4, PostCSS, Autoprefixer configured
+- Tailwind CSS v4, PostCSS (postcss.config.cjs, uses @tailwindcss/postcss), Autoprefixer configured
 - Playwright installed for E2E testing
 - Example shared types import from `@familyflow/shared` in `src/shared-types-example.ts`
 

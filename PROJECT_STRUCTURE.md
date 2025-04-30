@@ -20,7 +20,7 @@ This project is a JavaScript/TypeScript monorepo managed with Turborepo (v2.5+).
 - Backend: TypeORM (SQLite), GraphQL (code-first), strict TS, User/Event/Notification entities
 
 - `packages/frontend/` - React app bootstrapped with Vite (React + TS)
-  - Tailwind CSS v4 configured (tailwind.config.js, postcss.config.js, index.css)
+  - Tailwind CSS v4 configured (tailwind.config.js, postcss.config.cjs, index.css, uses @tailwindcss/postcss plugin)
   - Playwright installed for E2E testing
   - Example shared types import (`src/shared-types-example.ts`)
 - `packages/backend/` - Server/backend code (NestJS)
