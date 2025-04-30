@@ -54,3 +54,9 @@
   - Added explicit return types for Int, String, Boolean, and Date in User, Event, and Notification entities
   - Updated type functions to use proper TypeScript syntax: `(): typeof Type => Type`
   - Verified proper promise handling in main.ts bootstrap function
+
+## [2024-06-10 16:00] Additional TypeScript Linting Fixes
+- Fixed @Field decorator type functions to use simpler arrow syntax
+- Added explicit void operator to bootstrap promise in main.ts
+- Simplified type declarations in entity decorators
+- Updated all entity files to use consistent type function syntax

@@ -4,19 +4,19 @@ import { ObjectType, Field, Int } from '@nestjs/graphql';
 @ObjectType()
 @Entity()
 export class Notification {
-  @Field((): typeof Int => Int, { description: 'Unique identifier' })
+  @Field(() => Int, { description: 'Unique identifier' })
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Field((): typeof String => String)
+  @Field(() => String)
   @Column()
   message: string;
 
-  @Field((): typeof Boolean => Boolean)
+  @Field(() => Boolean)
   @Column({ default: false })
   read: boolean;
 
-  @Field((): typeof Date => Date)
+  @Field(() => Date)
   @CreateDateColumn()
   createdAt: Date;
 } 
