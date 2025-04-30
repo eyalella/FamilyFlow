@@ -10,7 +10,7 @@
     "packages/ai-models"
   ],
   "devDependencies": {
-    "turbo": "^2.5.0"
+    "turbo": "^2.5.2"
   },
   "scripts": {
     "dev": "turbo run dev",
@@ -19,5 +19,6 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "packageManager": "npm@11.3.0"
 }
