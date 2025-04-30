@@ -28,4 +28,8 @@ This project is a JavaScript/TypeScript monorepo managed with Turborepo (v2.5+).
 - `packages/ai-models/` - AI/ML models and logic
 
 - [2024-06-09] Created 'feature/configure-shared-types-utilities' branch to begin work on shared types and utilities.
-- [2024-06-09] Added `packages/shared/src/index.ts` as a barrel export for backend TypeORM entities and GraphQL DTOs (User, Event, Notification). Circular dependency avoidance enforced by convention. 
+- [2024-06-09] Added `packages/shared/src/index.ts` as a barrel export for backend TypeORM entities and GraphQL DTOs (User, Event, Notification). Circular dependency avoidance enforced by convention.
+- [2024-06-10] Created and switched to 'feature/configure-cicd-pipeline' branch for CI/CD pipeline configuration.
+- `.github/workflows/ci.yml` – GitHub Actions workflow for CI/CD: install, lint, test, build, and deploy (to AWS ECS via OIDC/role-assume)
+
+- [2024-06-10] Added CI/CD pipeline workflow for install, lint, test, build, and deploy to AWS ECS using GitHub Actions and OIDC role assumption. 

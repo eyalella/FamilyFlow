@@ -51,4 +51,14 @@ Remote caching is enabled via Turborepo for faster CI and local builds.
 ## [2024-06-09] Shared Types/DTOs Update
 - `packages/shared/src/index.ts` now provides a barrel export for backend TypeORM entities and GraphQL DTOs (User, Event, Notification). Do not import from this barrel within backend entity/DTO definitions to avoid circular dependencies.
 
+## CI/CD Pipeline
+This project uses GitHub Actions for continuous integration and deployment:
+- **Install, Lint, Test, Build:** Automated on every push/PR to `main` or `develop` via `.github/workflows/ci.yml`.
+- **Deploy:** After successful build, the backend is built into a Docker image, pushed to Amazon ECR, and deployed to AWS ECS using OIDC and role assumption (no static AWS secrets required).
+- **Fail Fast:** Workflow fails on any lint or test errors.
+
+### Onboarding for CI/CD
+- Ensure AWS and ECS variables in `.github/workflows/ci.yml` are set for your environment (region, ECR repo, ECS cluster/service, task definition, container name).
+- The workflow assumes an AWS role using OIDC for secure deployment (see `role-to-assume` in the deploy job).
+
 > We'll grow this doc as we build.

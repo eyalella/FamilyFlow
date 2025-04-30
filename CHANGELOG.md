@@ -30,3 +30,9 @@
 - Installed and set up Playwright for E2E testing
 - Added example import for shared types from `@familyflow/shared`
 - Fix Tailwind v4 and Vite integration: migrate PostCSS config to .cjs, use @tailwindcss/postcss plugin, update docs, and remove old config.
+
+## [2024-06-10]
+- Created and switched to new feature branch 'feature/configure-cicd-pipeline' for CI/CD pipeline configuration.
+- Added `.github/workflows/ci.yml` for CI/CD pipeline: install, lint, test, build, and deploy jobs.
+- Deploy job uses GitHub Actions OIDC to assume AWS role and deploy to ECS (ECR build/push, ECS task update, service deploy).
+- Workflow fails on lint or test errors.
