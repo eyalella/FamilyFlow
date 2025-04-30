@@ -27,4 +27,9 @@ This project uses [Turborepo](https://turbo.build/) for managing a JavaScript/Ty
 ### Remote Caching
 Remote caching is enabled via Turborepo for faster CI and local builds.
 
-> We’ll grow this doc as we build.
+## Turbo Setup Notes
+- Ensure the root `package.json` includes a `packageManager` field (e.g., `"packageManager": "npm@11.3.0"`).
+- The `turbo.json` file must use the `tasks` field instead of the deprecated `pipeline` field (required for turbo 2.x+).
+- Turbo is installed as a local dev dependency.
+
+> We'll grow this doc as we build.

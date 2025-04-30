@@ -4,8 +4,8 @@ This project is a JavaScript/TypeScript monorepo managed with Turborepo (v2.5+).
 
 ## Root
 - `.gitignore` – Ignores node_modules, build output, logs, .env, SQLite, IDE files, and more
-- `package.json` – Monorepo config, workspaces, scripts
-- `turbo.json` – Turborepo pipeline and remote cache config
+- `package.json` – Monorepo config, workspaces, scripts, now includes a `packageManager` field for toolchain compatibility
+- `turbo.json` – Turborepo pipeline and remote cache config, uses the `tasks` field (not `pipeline`) as required by turbo 2.x
 - `tsconfig.json` – Shared TypeScript config and path aliases
 
 ## Packages

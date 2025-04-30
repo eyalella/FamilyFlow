@@ -14,3 +14,9 @@
 - Configured TypeORM for SQLite and GraphQL (code-first)
 - Created User, Event, Notification entities
 - Updated documentation 
+
+## [2024-06-09] Turbo local install and config fixes
+- Added `packageManager` field to root package.json (now set to npm@11.3.0) to resolve turbo warning.
+- Installed `turbo` as a local dev dependency.
+- Renamed `pipeline` to `tasks` in turbo.json to comply with turbo 2.x requirements.
+- Ran `npm run dev` to verify all issues are resolved.
