@@ -4,19 +4,19 @@ import { ObjectType, Field, Int } from '@nestjs/graphql';
 @ObjectType()
 @Entity()
 export class Event {
-  @Field(() => Int)
+  @Field((type) => Int, { description: 'Unique identifier' })
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Field()
+  @Field(() => String)
   @Column()
   title: string;
 
-  @Field({ nullable: true })
+  @Field(() => String, { nullable: true })
   @Column({ nullable: true })
   description?: string;
 
-  @Field()
+  @Field(() => String)
   @Column()
   date: string;
 } 

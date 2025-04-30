@@ -31,7 +31,7 @@
 - Added example import for shared types from `@familyflow/shared`
 - Fix Tailwind v4 and Vite integration: migrate PostCSS config to .cjs, use @tailwindcss/postcss plugin, update docs, and remove old config.
 
-## [2024-06-10]
+## [2024-06-10] CI/CD Pipeline and Testing Setup
 - Created and switched to new feature branch 'feature/configure-cicd-pipeline' for CI/CD pipeline configuration.
 - Added `.github/workflows/ci.yml` for CI/CD pipeline: install, lint, test, build, and deploy jobs.
 - Deploy job uses GitHub Actions OIDC to assume AWS role and deploy to ECS (ECR build/push, ECS task update, service deploy).
@@ -42,3 +42,9 @@
 - Added `test` script to frontend package.json.
 - Updated documentation in README.md and PROJECT_STRUCTURE.md to reflect Playwright setup.
 - Created and switched to new feature branch 'feature/setup-testing-coverage' for Setup Testing & Coverage.
+
+## [2024-06-10] Linting Fixes
+- Fixed linting errors in backend entities and main.ts:
+  - Added explicit return types to @Field decorators in User, Event, and Notification entities
+  - Added proper promise handling in bootstrap function
+  - Pipeline now passes all lint checks
