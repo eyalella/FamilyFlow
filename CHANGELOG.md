@@ -27,3 +27,4 @@
 - Enabled React strict mode
 - Installed and set up Playwright for E2E testing
 - Added example import for shared types from `@familyflow/shared`
+- Fix Tailwind v4 and Vite integration: migrate PostCSS config to .cjs, use @tailwindcss/postcss plugin, update docs, and remove old config.
