@@ -36,3 +36,9 @@
 - Added `.github/workflows/ci.yml` for CI/CD pipeline: install, lint, test, build, and deploy jobs.
 - Deploy job uses GitHub Actions OIDC to assume AWS role and deploy to ECS (ECR build/push, ECS task update, service deploy).
 - Workflow fails on lint or test errors.
+- Set up Playwright for all tests in frontend package.
+- Added `playwright.config.ts` with headless mode in CI and trace recording on failure.
+- Created `tests/` directory for unit, integration, and E2E tests (empty, ready for test files).
+- Added `test` script to frontend package.json.
+- Updated documentation in README.md and PROJECT_STRUCTURE.md to reflect Playwright setup.
+- Created and switched to new feature branch 'feature/setup-testing-coverage' for Setup Testing & Coverage.

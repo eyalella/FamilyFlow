@@ -52,3 +52,10 @@ export default tseslint.config({
   },
 })
 ```
+
+### Testing & Coverage
+- Playwright is set up for E2E, integration, and unit tests.
+- All tests are located in the `tests/` directory.
+- Playwright config: `playwright.config.ts` (headless mode in CI, traces recorded on failure).
+- To run tests: `npx playwright test`
+- To view HTML report: `npx playwright show-report`
