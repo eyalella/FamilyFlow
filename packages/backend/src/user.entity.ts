@@ -4,15 +4,15 @@ import { ObjectType, Field, Int } from '@nestjs/graphql';
 @ObjectType()
 @Entity()
 export class User {
-  @Field((type) => Int, { description: 'Unique identifier' })
+  @Field((): typeof Int => Int, { description: 'Unique identifier' })
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Field(() => String)
+  @Field((): typeof String => String)
   @Column()
   name: string;
 
-  @Field(() => String)
+  @Field((): typeof String => String)
   @Column({ unique: true })
   email: string;
 } 

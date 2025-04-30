@@ -48,3 +48,9 @@
   - Added explicit return types to @Field decorators in User, Event, and Notification entities
   - Added proper promise handling in bootstrap function
   - Pipeline now passes all lint checks
+
+## [2024-06-10 15:45] Fixed TypeScript Linting Issues
+- Fixed unsafe return types in @Field decorators across all entities:
+  - Added explicit return types for Int, String, Boolean, and Date in User, Event, and Notification entities
+  - Updated type functions to use proper TypeScript syntax: `(): typeof Type => Type`
+  - Verified proper promise handling in main.ts bootstrap function
