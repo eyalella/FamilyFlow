@@ -26,6 +26,9 @@ This project is a JavaScript/TypeScript monorepo managed with Turborepo (v2.5+).
 - `packages/backend/` - Server/backend code (NestJS)
 - `packages/shared/` - Shared code (types, utils, etc.)
 - `packages/ai-models/` - AI/ML models and logic
+- `packages/frontend/tests/` - Contains all Playwright tests (unit, integration, E2E)
+- `packages/frontend/playwright.config.ts` - Playwright configuration (headless in CI, traces on failure)
 
 - [2024-06-09] Created 'feature/configure-shared-types-utilities' branch to begin work on shared types and utilities.
-- [2024-06-09] Added `packages/shared/src/index.ts` as a barrel export for backend TypeORM entities and GraphQL DTOs (User, Event, Notification). Circular dependency avoidance enforced by convention. 
+- [2024-06-09] Added `packages/shared/src/index.ts` as a barrel export for backend TypeORM entities and GraphQL DTOs (User, Event, Notification). Circular dependency avoidance enforced by convention.
+- [2024-06-10] Created and switched to 'feature/setup-testing-coverage' branch for Setup Testing & Coverage. 

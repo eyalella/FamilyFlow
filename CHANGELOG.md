@@ -30,3 +30,11 @@
 - Installed and set up Playwright for E2E testing
 - Added example import for shared types from `@familyflow/shared`
 - Fix Tailwind v4 and Vite integration: migrate PostCSS config to .cjs, use @tailwindcss/postcss plugin, update docs, and remove old config.
+
+## [2024-06-10]
+- Set up Playwright for all tests in frontend package.
+- Added `playwright.config.ts` with headless mode in CI and trace recording on failure.
+- Created `tests/` directory for unit, integration, and E2E tests (empty, ready for test files).
+- Added `test` script to frontend package.json.
+- Updated documentation in README.md and PROJECT_STRUCTURE.md to reflect Playwright setup.
+- Created and switched to new feature branch 'feature/setup-testing-coverage' for Setup Testing & Coverage.
