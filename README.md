@@ -19,6 +19,13 @@ This project uses [Turborepo](https://turbo.build/) for managing a JavaScript/Ty
 - GraphQL API (code-first, playground enabled)
 - Entities: User, Event, Notification
 
+### Frontend Setup (React)
+- Located in `packages/frontend`
+- Bootstrapped with Vite (React + TypeScript, v6+)
+- Tailwind CSS v4, PostCSS, Autoprefixer configured
+- Playwright installed for E2E testing
+- Example shared types import from `@familyflow/shared` in `src/shared-types-example.ts`
+
 ### Getting Started
 1. Install dependencies: `npm install`
 2. Run all dev servers: `npm run dev`
@@ -31,5 +38,11 @@ Remote caching is enabled via Turborepo for faster CI and local builds.
 - Ensure the root `package.json` includes a `packageManager` field (e.g., `"packageManager": "npm@11.3.0"`).
 - The `turbo.json` file must use the `tasks` field instead of the deprecated `pipeline` field (required for turbo 2.x+).
 - Turbo is installed as a local dev dependency.
+
+### Getting Started (Frontend)
+1. `cd packages/frontend`
+2. `npm install`
+3. `npm run dev` (starts Vite dev server)
+4. To run Playwright tests: `npx playwright test`
 
 > We'll grow this doc as we build.
