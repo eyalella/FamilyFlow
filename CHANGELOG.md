@@ -7,6 +7,8 @@
 - Enabled remote caching in turbo.json
 - Configured tsconfig.json with path aliases for shared code
 - Added documentation and onboarding updates to README.md and PROJECT_STRUCTURE.md 
+- Created and checked out new feature branch: 'feature/configure-shared-types-utilities' for 'Configure Shared Types & Utilities'
+- Created `packages/shared/src/index.ts` as a barrel export for TypeORM entities and GraphQL DTOs (User, Event, Notification) from backend. Added note to enforce no circular dependencies.
 
 ## [2024-06-09]
 - Bootstrapped backend service with NestJS (strict TS)

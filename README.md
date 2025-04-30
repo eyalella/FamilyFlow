@@ -45,4 +45,10 @@ Remote caching is enabled via Turborepo for faster CI and local builds.
 3. `npm run dev` (starts Vite dev server)
 4. To run Playwright tests: `npx playwright test`
 
+## [2024-06-09] Branch Update
+- New feature branch 'feature/configure-shared-types-utilities' created for configuring shared types and utilities. Please use this branch for all related work and collaboration.
+
+## [2024-06-09] Shared Types/DTOs Update
+- `packages/shared/src/index.ts` now provides a barrel export for backend TypeORM entities and GraphQL DTOs (User, Event, Notification). Do not import from this barrel within backend entity/DTO definitions to avoid circular dependencies.
+
 > We'll grow this doc as we build.
