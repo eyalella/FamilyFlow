@@ -20,3 +20,10 @@
 - Installed `turbo` as a local dev dependency.
 - Renamed `pipeline` to `tasks` in turbo.json to comply with turbo 2.x requirements.
 - Ran `npm run dev` to verify all issues are resolved.
+
+## [2024-04-30]
+- Bootstrapped React app in `packages/frontend` using Vite (React + TS, v6+)
+- Installed and configured Tailwind CSS v4, PostCSS, Autoprefixer
+- Enabled React strict mode
+- Installed and set up Playwright for E2E testing
+- Added example import for shared types from `@familyflow/shared`
