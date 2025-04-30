@@ -1,0 +1,11 @@
+{
+  "name": "@familyflow/backend",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "echo 'Backend dev'",
+    "build": "echo 'Backend build'"
+  },
+  "dependencies": {}
+} 
