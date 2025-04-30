@@ -25,4 +25,7 @@ This project is a JavaScript/TypeScript monorepo managed with Turborepo (v2.5+).
   - Example shared types import (`src/shared-types-example.ts`)
 - `packages/backend/` - Server/backend code (NestJS)
 - `packages/shared/` - Shared code (types, utils, etc.)
-- `packages/ai-models/` - AI/ML models and logic 
+- `packages/ai-models/` - AI/ML models and logic
+
+- [2024-06-09] Created 'feature/configure-shared-types-utilities' branch to begin work on shared types and utilities.
+- [2024-06-09] Added `packages/shared/src/index.ts` as a barrel export for backend TypeORM entities and GraphQL DTOs (User, Event, Notification). Circular dependency avoidance enforced by convention. 
