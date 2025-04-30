@@ -13,6 +13,12 @@ This project uses [Turborepo](https://turbo.build/) for managing a JavaScript/Ty
 - `packages/shared` – Shared code (types, utils, etc.)
 - `packages/ai-models` – AI/ML models and logic
 
+### Backend Service
+- Built with [NestJS](https://nestjs.com/) (strict TypeScript)
+- Uses TypeORM with SQLite for local development
+- GraphQL API (code-first, playground enabled)
+- Entities: User, Event, Notification
+
 ### Getting Started
 1. Install dependencies: `npm install`
 2. Run all dev servers: `npm run dev`
