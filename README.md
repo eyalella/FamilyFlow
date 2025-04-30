@@ -27,5 +27,4 @@ This project uses [Turborepo](https://turbo.build/) for managing a JavaScript/Ty
 ### Remote Caching
 Remote caching is enabled via Turborepo for faster CI and local builds.
 
->>>>>>> Stashed changes
 > We’ll grow this doc as we build.

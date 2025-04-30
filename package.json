@@ -1,0 +1,23 @@
+{
+  "name": "family_flow_ai",
+  "version": "1.0.0",
+  "description": "Smart AI calendar for busy families. Monorepo managed with Turborepo.",
+  "private": true,
+  "workspaces": [
+    "packages/backend",
+    "packages/frontend",
+    "packages/shared",
+    "packages/ai-models"
+  ],
+  "devDependencies": {
+    "turbo": "^2.5.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

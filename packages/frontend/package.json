@@ -1,0 +1,11 @@
+{
+  "name": "@familyflow/frontend",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "echo 'Frontend dev'",
+    "build": "echo 'Frontend build'"
+  },
+  "dependencies": {}
+} 

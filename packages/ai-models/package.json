@@ -1,0 +1,10 @@
+{
+  "name": "@familyflow/ai-models",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "echo 'AI Models build'"
+  },
+  "dependencies": {}
+} 
